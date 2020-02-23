@@ -4,9 +4,10 @@
   "description": "basic calculator",
   "main": "index.js",
   "scripts": {
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index.js",
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "Ryan Nieves",
