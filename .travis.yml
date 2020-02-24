@@ -19,5 +19,5 @@ jobs:
     - stage: Produce Coverage
       node_js: node
 script:
-  - jest --coverage
+  - jest --coverage --coverageReporters=text-lcov | coveralls
   - npm test
