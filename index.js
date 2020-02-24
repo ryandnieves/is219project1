@@ -1,23 +1,11 @@
-const sum = require('./sum');
+const Calculator  = require('./MathOperations')
 a = 1;
 b = 2;
 
-c = sum(a,b);
+sum = Calculator.sum(a,b);
+product = Calculator.product(a,b);
+quotient = Calculator.quotient(a,b);
 
-const multiply = require('./multiply');
-a = 1;
-b = 2;
-
-c = multiply(a,b);
-
-const subtract = require('./subtract');
-a = 1;
-b = 2;
-
-c = subtract(a,b);
-
-const divide = require('./divide');
-a = 2;
-b = 2;
-
-c = divide(a,b);
+console.log("The sum of your number is: " +sum);
+console.log("The product of your number is: " +product);
+console.log("The quotient of your number is: " +quotient);

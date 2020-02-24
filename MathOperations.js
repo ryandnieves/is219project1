@@ -5,10 +5,10 @@ const divide = require('./divide');
 class MathOperations {
     static sum(a = null, b = null) {
         if(Array.isArray(a)) {
-            return addition.sum(a);
+            return addition(a);
         }
         else {
-            return addition.sum(a,b);
+            return addition(a,b);
         }
     }
     static product(a,b) {
