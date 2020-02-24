@@ -11,6 +11,8 @@ before_install:
   - npm update
 install:
   - npm install
+  -
+before_script: chmod 0555 ./node_modules/.bin/jest
 
 jobs:
   include:
