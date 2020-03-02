@@ -12,6 +12,13 @@ class Cities {
         this.population = population;
         this.id = id;
     }
+
+    static create(city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id) {
+        return new Cities(city, city_ascii, lat, lng, country, iso2, iso3, admin_name, capital, population, id)
+    }
 }
+
+
+
 
 module.exports = Cities;
